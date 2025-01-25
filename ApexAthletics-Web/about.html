@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Athletics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="images/ic.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jockey+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/021ed62001.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main-container">
+        <!--Header-->
+        <header>
+            <div class="banner2">
+                <nav>
+                    <div class="logo"><img src="images/ApexAthletics_logo_final.png" alt="logo"></div>
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><button onclick="document.getElementById('id01').style.display='block'">Login</button></li>
+                    </ul>
+                </nav>
+                <article class="grid3">
+                    <h2 style="font-size: 4em; margin-bottom: -30px; color: rgb(93, 93, 93);">Introducing</h2>
+                    <h1 class="h11" style="color: #ffffff;">Apex Athletics</h1>
+                    <p style="font-size: 2em; margin-top: -30px;">We explore your hidden potential</p>
+                </article>
+            </div>
+            <!-- Modal -->
+            <div class="modal" id="id01">
+                <form class="modal-content animate" action="#" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                        <img src="images/avatar.png" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <!--About-->
+        <section class="timeline">
+            <div class="timeline-row">
+                <div class="timeline-column">
+                    <h2 class="title">Facility & Business Growth</span></h2>
+
+                    <div class="timeline-box">
+                        <div class="timeline-content">
+                            <div class="content">
+                                <div class="year"><i class="fa fa-calendar"></i> 2005 - 2008</div>
+                                <h3>First Steps</h3>
+                                <p>Opened the first gym in Plovdiv with just 2,000 sq. ft. of space.
+                                    Expanded the gym to include a space for group fitness classes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-content">
+                            <div class="content">
+                                <div class="year"><i class="fa fa-calendar"></i> 2010 - 2015</div>
+                                <h3>Expansion</h3>
+                                <p>Opened a second branch in Sofia, doubling the size of the gym’s footprint.
+                                    Upgraded all locations with state-of-the-art fitness equipment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-content">
+                            <div class="content">
+                                <div class="year"><i class="fa fa-calendar"></i> 2020 - 2025</div>
+                                <h3>Digital Masters</h3>
+                                <p>Introduced virtual classes and an app for online bookings.
+                                    Launched a premium personal training studio and celebrated 20 years in business.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-column">
+                    <h2 class="title">Community & Achievements</h2>
+
+                    <div class="timeline-box">
+                        <div class="timeline-content">
+                            <div class="content">
+                                <div class="year"><i class="fa fa-calendar"></i> 2006 - 2010</div>
+                                <h3>Closer to the Community</h3>
+                                <p>Hosted the first “Charity Fitness Challenge,” raising funds for local schools.
+                                    Introduced community yoga programs in local parks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-content">
+                            <div class="content">
+                                <div class="year"><i class="fa fa-calendar"></i> 2015 - 2018</div>
+                                <h3>Fitness for Everyone</h3>
+                                <p>Awarded “Best Gym in Plovdiv” by the local magazines.
+                                    Reached 5,000 active members and made free youth fitness classes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-content">
+                            <div class="content">
+                                <div class="year"><i class="fa fa-calendar"></i> 2021 - 2023</div>
+                                <h3>Make the World a Better Place</h3>
+                                <p>Organized free fitness workshops for workers during the pandemic.
+                                    Earned a national award for “Outstanding Contribution to Wellness.”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Testimonials-->
+        <section id="testimonials">
+            <h2 style="color: var(--primary-color)">What out customers say</h2>
+            <div class="stats-container">
+                <div class="sub-plans">
+                    <div class="testimonials-grids">
+                        <div class="testimonials-items">
+                            <div class="feedback-info">
+                                <div class="feedback-top">
+                                    <p> "I couldn’t be happier with my purchase! The service was exceptional, 
+                                        and my order arrived right on time, perfectly packaged."
+                                    </p>
+                                </div>
+                                <div class="feedback-grids">
+                                    <div class="feedback-icon">
+                                        <span class="fa fa-user-o"></span>
+                                    </div>
+                                    <div class="feedback-img-info">
+                                        <h5>Dwayne Johnson</h5>
+                                        <p>Bodybuilder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback-info">
+                                <div class="feedback-top">
+                                    <p> "From start to finish, my experience was fantastic! 
+                                        Everything was even better than I had hoped, and it worked perfectly from day one."
+                                    </p>
+                                </div>
+                                <div class="feedback-grids">
+                                    <div class="feedback-icon">
+                                        <span class="fa fa-user-o"></span>
+                                    </div>
+                                    <div class="feedback-img-info">
+                                        <h5>Salma Hayek</h5>
+                                        <p>Weightlifter</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback-info">
+                                <div class="feedback-top">
+                                    <p> "I am beyond impressed with this fitness! The coaches team went above and beyond to assist me, 
+                                        making my entire experience smooth and stress-free."
+                                    </p>
+                                </div>
+                                <div class="feedback-grids">
+                                    <div class="feedback-icon">
+                                        <span class="fa fa-user-o"></span>
+                                    </div>
+                                    <div class="feedback-img-info">
+                                        <h5>Rumen Radev</h5>
+                                        <p>Crossfiter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer id="footer-container">
+            <p>&copy; 2025 Apex Athletics. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var modal = document.getElementById('id01');
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        console.log('Menu button clicked');
+        navLinks.classList.toggle('collapsed');
+    });
+</script>
+<script>
+    document.querySelector('.modal-content').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const isValid = validateLogin(this);
+
+        if (isValid) {
+            alert('You have loged in successfully!');
+            this.submit();
+        }
+    });
+</script>

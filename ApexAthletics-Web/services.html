@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Athletics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="images/ic.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jockey+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/021ed62001.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main-container">
+        <!--Header-->
+        <header>
+            <div class="banner3">
+                <nav>
+                    <div class="logo"><img src="images/ApexAthletics_logo_final.png" alt="logo"></div>
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><button onclick="document.getElementById('id01').style.display='block'">Login</button></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Modal -->
+            <div class="modal" id="id01">
+                <form class="modal-content animate" action="#" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                        <img src="images/avatar.png" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <!--Specializations-->
+        <section class="services-section">
+            <div class="background-image"></div>
+            <h2>Our Specializations</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/bodybuilding.png" alt="Bodybuilding">
+                    </div>
+                    <h2 style="color: var(--primary-color)">Bodybuilding</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dolores.
+                    </p>
+                    <button>More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/weightlifting.png" alt="Weightlifting">
+                    </div>
+                    <h2 style="color: var(--primary-color)">Weightlifting</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dolores.
+                    </p>
+                    <button>More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/running.png" alt="Crossfit">
+                    </div>
+                    <h2 style="color: var(--primary-color)">Crossfit</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dolores.
+                    </p>
+                    <button>More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/yoga.png" alt="Yoga">
+                    </div>
+                    <h2 style="color: var(--primary-color)">Yoga</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dolores.
+                    </p>
+                    <button>More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/diet.png" alt="Nutrition">
+                    </div>
+                    <h2 style="color: var(--primary-color)">Nutrition</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dolores.
+                    </p>
+                    <button>More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/competition.png" alt="Competition">
+                    </div>
+                    <h2 style="color: var(--primary-color)">Competition</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dolores.
+                    </p>
+                    <button>More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/zumba.png" alt="Zumba">
+                    </div>
+                    <h2 style="color: var(--primary-color)">Zumba</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dolores.
+                    </p>
+                    <button>More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/meditate.png" alt="Meditation">
+                    </div>
+                    <h2 style="color: var(--primary-color)">Meditation</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dolores.
+                    </p>
+                    <button>More</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer id="footer-container">
+            <p>&copy; 2025 Apex Athletics. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var modal = document.getElementById('id01');
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        console.log('Menu button clicked');
+        navLinks.classList.toggle('collapsed');
+    });
+</script>
+<script>
+    document.querySelector('.modal-content').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const isValid = validateLogin(this);
+
+        if (isValid) {
+            alert('You have loged in successfully!');
+            this.submit();
+        }
+    });
+</script>
